@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MJL Landscaping — licensed and insured C-27 landscaping contractor serving Pittsburg, Antioch, Bay Point, Concord, Brentwood and Oakley. Landscape installs, maintenance, irrigation, sod, pavers and cleanups. Free estimates. CSLB #1107968. Call or text (925) 787-2220.">
+<title>MJL Landscaping — Pittsburg, CA</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --page: #F7FAF8;
+    --page-deep: #E9F0EC;
+    --pine: #1C3A2E;
+    --pine-deep: #11261D;
+    --fern: #2E7D52;
+    --fern-br: #3C9E68;
+    --sun: #D9A021;
+    --ink: #1A211D;
+    --ink-soft: #596560;
+    --line: #D8E3DC;
+    --card: #FFFFFF;
+    --img-bg: #E2EBE5;
+    --on-dark: #EFF6F1;
+    --on-accent: #FFFFFF;
+    --display: "Outfit", "Segoe UI", Arial, sans-serif;
+    --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page: #101614;
+      --page-deep: #0A100E;
+      --pine: #8FBCA6;
+      --pine-deep: #B2D6C2;
+      --fern: #4FB37C;
+      --fern-br: #6ACB95;
+      --sun: #E0AE3C;
+      --ink: #E5ECE8;
+      --ink-soft: #94A39C;
+      --line: #22302A;
+      --card: #161F1B;
+      --img-bg: #1F2B25;
+      --on-dark: #0A100E;
+      --on-accent: #101614;
+    }
+  }
+  :root[data-theme="dark"] {
+    --page: #101614;
+    --page-deep: #0A100E;
+    --pine: #8FBCA6;
+    --pine-deep: #B2D6C2;
+    --fern: #4FB37C;
+    --fern-br: #6ACB95;
+    --sun: #E0AE3C;
+    --ink: #E5ECE8;
+    --ink-soft: #94A39C;
+    --line: #22302A;
+    --card: #161F1B;
+    --img-bg: #1F2B25;
+    --on-dark: #0A100E;
+    --on-accent: #101614;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font-family: var(--body); font-size: 1.0625rem; line-height: 1.66;
+  }
+  a { color: var(--fern); }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--fern); outline-offset: 2px; border-radius: 3px; }
+  img, svg { max-width: 100%; display: block; }
+
+  .wrap { max-width: 70rem; margin: 0 auto; padding: 0 1.25rem; }
+  .eyebrow {
+    font-weight: 700; font-size: 0.75rem; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--sun); margin: 0 0 0.8rem;
+  }
+  h1, h2, h3 { font-family: var(--display); font-weight: 700; color: var(--pine-deep); text-wrap: balance; margin: 0; letter-spacing: -0.028em; }
+  h2 { font-size: clamp(1.95rem, 4.7vw, 2.6rem); line-height: 1.1; }
+  h3 { font-size: 1.15rem; }
+  p { margin: 0; }
+  section { padding: 4.4rem 0; scroll-margin-top: 4.5rem; }
+  .section-intro { max-width: 44em; margin-top: 0.95rem; color: var(--ink-soft); }
+
+  /* Header */
+  .site-head {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--pine-deep); border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 0.9rem; padding: 0.6rem 0; }
+  .brand { display: flex; align-items: center; gap: 0.62rem; text-decoration: none; }
+  .brand .txt { font-family: var(--display); font-weight: 800; font-size: 1.26rem; line-height: 1; color: #FFFFFF; letter-spacing: -0.03em; }
+  .brand .txt small { display: block; font-family: var(--body); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.22em; color: var(--sun); margin-top: 4px; text-transform: uppercase; }
+  nav.top { display: none; gap: 1.15rem; }
+  nav.top a { color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 0.92rem; }
+  nav.top a:hover { color: var(--sun); }
+  .call-btn {
+    display: inline-block; background: #FFFFFF; color: var(--pine-deep);
+    text-decoration: none; font-weight: 700; font-size: 0.9rem;
+    padding: 0.54rem 1.05rem; border-radius: 0.4rem; white-space: nowrap;
+  }
+  .call-btn:hover { background: var(--sun); color: #231A05; }
+  @media (min-width: 1020px) { nav.top { display: flex; } }
+  @media (max-width: 420px) { .brand .txt { font-size: 1.06rem; } .call-btn { font-size: 0.8rem; padding: 0.5rem 0.75rem; } }
+
+  /* Hero */
+  .hero { padding: 3.5rem 0 3.9rem; position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; inset: -30% -14% auto 44%; height: 92%;
+    background: radial-gradient(ellipse at center, color-mix(in srgb, var(--fern-br) 22%, transparent), transparent 66%);
+    pointer-events: none;
+  }
+  .hero-grid { display: grid; gap: 2.4rem; align-items: center; position: relative; }
+  @media (min-width: 880px) { .hero-grid { grid-template-columns: 1.04fr 1fr; gap: 3rem; } }
+  .pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.15rem; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+    padding: 0.32rem 0.9rem; font-weight: 600; font-size: 0.82rem; color: var(--ink-soft);
+  }
+  .pill.ins { border-color: var(--fern); color: var(--fern); }
+  .hero h1 { font-size: clamp(2.15rem, 5.6vw, 3.1rem); line-height: 1.05; }
+  .hero h1 .f { color: var(--fern); }
+  .hero .lede { margin-top: 1.15rem; font-size: 1.13rem; max-width: 33em; color: var(--ink-soft); }
+  .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.8rem; }
+  .btn {
+    display: inline-block; text-decoration: none; font-family: var(--display);
+    font-weight: 700; font-size: 0.98rem; padding: 0.84rem 1.65rem; border-radius: 0.4rem;
+    border: none; cursor: pointer;
+  }
+  .btn-solid { background: var(--fern); color: var(--on-accent); }
+  .btn-solid:hover { background: var(--fern-br); }
+  .btn-ghost { border: 2px solid var(--pine); color: var(--pine); background: transparent; }
+  .btn-ghost:hover { border-color: var(--fern); color: var(--fern); }
+  .hero-note { margin-top: 1.25rem; font-size: 0.92rem; color: var(--ink-soft); }
+  .hero-photo { margin: 0; border-radius: 0.7rem; overflow: hidden; border: 1px solid var(--line); background: var(--img-bg); }
+  .hero-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+
+  /* Strip */
+  .strip { background: var(--pine-deep); padding: 1.95rem 0; }
+  .strip-grid { display: grid; gap: 1.35rem; grid-template-columns: repeat(2, 1fr); text-align: center; }
+  @media (min-width: 780px) { .strip-grid { grid-template-columns: repeat(4, 1fr); } }
+  .strip-grid .n { font-family: var(--display); font-weight: 800; font-size: clamp(1.15rem, 2.8vw, 1.55rem); color: var(--sun); line-height: 1.14; }
+  .strip-grid .l { margin-top: 0.3rem; font-size: 0.76rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--on-dark); opacity: 0.84; }
+  :root[data-theme="dark"] .strip { background: var(--card); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .strip { background: var(--card); }
+  }
+
+  /* Services */
+  .svc-grid { display: grid; gap: 1.15rem; margin-top: 2.4rem; }
+  @media (min-width: 640px) { .svc-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1000px) { .svc-grid { grid-template-columns: repeat(3, 1fr); } }
+  .svc { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--fern); border-radius: 0.6rem; padding: 1.6rem 1.45rem; }
+  .svc .ico { color: var(--fern); margin-bottom: 0.78rem; }
+  .svc p { margin-top: 0.46rem; font-size: 0.94rem; color: var(--ink-soft); }
+
+  /* Split band */
+  .split-band {
+    margin-top: 2.1rem; background: var(--pine-deep); border-radius: 0.7rem;
+    padding: 1.75rem 1.8rem; display: grid; gap: 1rem; align-items: center;
+  }
+  @media (min-width: 760px) { .split-band { grid-template-columns: 1fr auto; } }
+  .split-band h3 { color: var(--on-dark); font-size: 1.22rem; }
+  .split-band p { margin-top: 0.4rem; font-size: 0.96rem; color: var(--on-dark); opacity: 0.85; }
+  .split-band .btn-solid { background: var(--sun); color: #231A05; }
+  .split-band .btn-solid:hover { background: var(--on-dark); color: var(--pine-deep); }
+  :root[data-theme="dark"] .split-band { background: var(--card); border: 1px solid var(--line); }
+  :root[data-theme="dark"] .split-band h3, :root[data-theme="dark"] .split-band p { color: var(--ink); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .split-band { background: var(--card); border: 1px solid var(--line); }
+    :root:not([data-theme="light"]) .split-band h3,
+    :root:not([data-theme="light"]) .split-band p { color: var(--ink); }
+  }
+
+  /* Process */
+  .process { background: var(--page-deep); }
+  .steps { display: grid; gap: 1.15rem; margin-top: 2.3rem; }
+  @media (min-width: 760px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+  .step { background: var(--card); border: 1px solid var(--line); border-radius: 0.6rem; padding: 1.55rem 1.4rem; }
+  .step .n { font-family: var(--display); font-weight: 800; font-size: 1.5rem; color: var(--sun); line-height: 1; }
+  .step h3 { margin-top: 0.5rem; font-size: 1.05rem; }
+  .step p { margin-top: 0.42rem; font-size: 0.93rem; color: var(--ink-soft); }
+
+  /* Licensed */
+  .ins-wrap { display: grid; gap: 1.8rem; margin-top: 2.4rem; align-items: center; }
+  @media (min-width: 820px) { .ins-wrap { grid-template-columns: minmax(0, 300px) 1fr; gap: 2.7rem; } }
+  .ins-card { background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--fern); border-radius: 0.7rem; padding: 2rem 1.7rem; text-align: center; }
+  .ins-card .num { font-family: var(--display); font-weight: 800; font-size: 2rem; color: var(--fern); line-height: 1; font-variant-numeric: tabular-nums; }
+  .ins-card .lbl { margin-top: 0.45rem; font-weight: 600; font-size: 0.93rem; }
+  .ins-card .sub { margin-top: 0.4rem; font-size: 0.85rem; color: var(--ink-soft); }
+  .ins-card a { display: inline-block; margin-top: 0.85rem; font-size: 0.88rem; font-weight: 600; }
+  .checks { margin: 1.2rem 0 0; padding: 0; list-style: none; display: grid; gap: 0.66rem; }
+  .checks li { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.97rem; }
+  .checks svg { flex: none; color: var(--fern); margin-top: 3px; }
+
+  /* Work */
+  .work { background: var(--page-deep); }
+  .work-grid { display: grid; gap: 1rem; margin-top: 2.3rem; grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 820px) { .work-grid { grid-template-columns: repeat(3, 1fr); } }
+  .shot { margin: 0; border: 1px solid var(--line); border-radius: 0.6rem; overflow: hidden; background: var(--card); }
+  .shot img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--img-bg); }
+  .shot figcaption { padding: 0.72rem 0.92rem; font-size: 0.85rem; color: var(--ink-soft); font-weight: 500; }
+  .fine { margin-top: 1.3rem; font-size: 0.85rem; color: var(--ink-soft); }
+
+  /* Areas */
+  .area-grid { display: grid; gap: 0.72rem; margin-top: 2.1rem; grid-template-columns: repeat(2, 1fr); }
+  @media (min-width: 700px) { .area-grid { grid-template-columns: repeat(4, 1fr); } }
+  .area {
+    background: var(--card); border: 1px solid var(--line); border-radius: 0.45rem;
+    padding: 0.9rem 0.75rem; text-align: center; font-weight: 600; font-size: 0.92rem; color: var(--pine-deep);
+  }
+
+  /* Estimate form */
+  .estimate { background: var(--page-deep); }
+  .est-grid { display: grid; gap: 2rem; margin-top: 2.2rem; }
+  @media (min-width: 880px) { .est-grid { grid-template-columns: 1fr 1.1fr; gap: 3rem; align-items: start; } }
+  .est-why { display: grid; gap: 0.8rem; }
+  .est-why .row { display: flex; gap: 0.7rem; align-items: flex-start; font-size: 0.97rem; }
+  .est-why svg { flex: none; color: var(--fern); margin-top: 3px; }
+  .eform { background: var(--card); border: 1px solid var(--line); border-radius: 0.7rem; padding: 1.7rem 1.6rem; }
+  .field { display: block; margin-bottom: 0.95rem; }
+  .field label { display: block; font-weight: 600; font-size: 0.86rem; margin-bottom: 0.3rem; }
+  .field input, .field select, .field textarea {
+    width: 100%; font-family: inherit; font-size: 0.97rem; color: var(--ink);
+    background: var(--page); border: 1px solid var(--line); border-radius: 0.4rem;
+    padding: 0.6rem 0.7rem;
+  }
+  .field textarea { min-height: 5.5rem; resize: vertical; }
+  .frow { display: grid; gap: 0.95rem; }
+  @media (min-width: 560px) { .frow { grid-template-columns: 1fr 1fr; } }
+  .eform .btn-solid { width: 100%; }
+  .eform .note { margin-top: 0.8rem; font-size: 0.82rem; color: var(--ink-soft); text-align: center; }
+  .sent { margin-top: 0.9rem; font-size: 0.9rem; font-weight: 600; text-align: center; }
+  .sent.ok { color: var(--fern); }
+  .sent.err { color: #C0492F; }
+
+  /* Contact */
+  .contact-band { background: var(--pine-deep); text-align: center; }
+  .contact-band .eyebrow { color: var(--sun); }
+  .contact-band h2 { color: var(--on-dark); }
+  .contact-band .section-intro { color: var(--on-dark); opacity: 0.87; margin-inline: auto; }
+  .contact-band .hero-ctas { justify-content: center; }
+  .contact-band .btn-solid { background: var(--fern); color: #FFFFFF; }
+  .contact-band .btn-solid:hover { background: var(--sun); color: #231A05; }
+  .contact-band .btn-ghost { border-color: var(--on-dark); color: var(--on-dark); }
+  .contact-band .btn-ghost:hover { border-color: var(--sun); color: var(--sun); }
+  .contact-band .fine { margin-top: 1.45rem; color: var(--on-dark); opacity: 0.84; font-size: 0.92rem; }
+  :root[data-theme="dark"] .contact-band { background: var(--page-deep); }
+  :root[data-theme="dark"] .contact-band h2,
+  :root[data-theme="dark"] .contact-band .section-intro,
+  :root[data-theme="dark"] .contact-band .fine { color: var(--ink); }
+  :root[data-theme="dark"] .contact-band .btn-ghost { border-color: var(--ink); color: var(--ink); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .contact-band { background: var(--page-deep); }
+    :root:not([data-theme="light"]) .contact-band h2,
+    :root:not([data-theme="light"]) .contact-band .section-intro,
+    :root:not([data-theme="light"]) .contact-band .fine { color: var(--ink); }
+    :root:not([data-theme="light"]) .contact-band .btn-ghost { border-color: var(--ink); color: var(--ink); }
+  }
+
+  /* Footer */
+  footer.site {
+    background: var(--page-deep); border-top: 1px solid var(--line);
+    color: var(--ink-soft); padding: 2.5rem 0; text-align: center; font-size: 0.9rem;
+  }
+  footer.site .fname { font-family: var(--display); font-weight: 800; font-size: 1.32rem; color: var(--pine-deep); letter-spacing: -0.03em; }
+  footer.site p { margin-top: 0.3rem; }
+  footer.site a { color: inherit; }
+  footer.site .fineprint { font-size: 0.78rem; max-width: 52em; margin: 0.9rem auto 0; }
+</style>
+</head>
+<body>
+
+<div class="site-head">
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="#top" aria-label="MJL Landscaping">
+        <svg width="36" height="36" viewBox="0 0 38 38" aria-hidden="true">
+          <circle cx="19" cy="19" r="18" fill="#2E7D52"/>
+          <path d="M19 30 V17" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M19 19 C 11 19, 7 14, 7 7 C 15 7, 19 12, 19 19 Z" fill="#D9A021"/>
+          <path d="M19 22 C 27 22, 31 17, 31 11 C 23 11, 19 16, 19 22 Z" fill="#FFFFFF"/>
+        </svg>
+        <span class="txt">MJL<small>Landscaping</small></span>
+      </a>
+      <nav class="top" aria-label="Sections">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#licensed">Licensed</a>
+        <a href="#work">Our work</a>
+        <a href="#areas">Areas</a>
+        <a href="#estimate">Free estimate</a>
+      </nav>
+      <a class="call-btn" href="tel:+19257872220">(925) 787-2220</a>
+    </header>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pills">
+          <span class="pill ins">Licensed, bonded &amp; insured</span>
+          <span class="pill">Free estimates</span>
+          <span class="pill">Call or text</span>
+        </div>
+        <h1>Yards that look after <span class="f">themselves.</span></h1>
+        <p class="lede">MJL Landscaping is a licensed C-27 contractor serving East Contra Costa — landscape installs, maintenance, irrigation, sod, pavers and cleanups, for homes and commercial properties alike.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-solid" href="#estimate">Request a free estimate</a>
+          <a class="btn btn-ghost" href="tel:+19257872220">Call (925) 787-2220</a>
+        </div>
+        <p class="hero-note">CSLB #1107968 &middot; licensed since 2023 &middot; Pittsburg, CA</p>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/frontyard.jpg" alt="Well-kept lawn and landscaping in front of a home">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 2. STRIP ============ -->
+  <div class="strip">
+    <div class="wrap strip-grid">
+      <div><div class="n">C-27</div><div class="l">Landscaping licence</div></div>
+      <div><div class="n">#1107968</div><div class="l">CSLB licensed</div></div>
+      <div><div class="n">$25,000</div><div class="l">Contractor's bond</div></div>
+      <div><div class="n">Insured</div><div class="l">Workers' comp carried</div></div>
+    </div>
+  </div>
+
+  <!-- ============ 3. SERVICES ============ -->
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">What we do</p>
+      <h2>Installed properly, then kept that way.</h2>
+      <p class="section-intro">Design and installation, plus the ongoing maintenance that keeps it looking right — one licensed crew for both.</p>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11"/><path d="M12 12C7 12 4 9 4 4c5 0 8 3 8 8z"/><path d="M12 14c5 0 8-3 8-8-5 0-8 3-8 8z"/></svg></div>
+          <h3>Landscape installation</h3>
+          <p>New yards planned and planted — beds, trees, shrubs and ground cover suited to the East Bay climate.</p>
+        </div>
+        <div class="svc">
+          <div class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18"/><path d="M5 17v-4h14v4"/><circle cx="7.5" cy="19.5" r="1.6"/><circle cx="16.5" cy="19.5" r="1.6"/><path d="M8 13V9h5v4"/></svg></div>
+          <h3>Lawn &amp; yard maintenance</h3>
+          <p>Mowing, edging, trimming, weeding and blowing on a regular schedule, so it never gets ahead of you.</p>
+        </div>
+        <div class="svc">
+          <div class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S6.5 9.4 6.5 14a5.5 5.5 0 0 0 11 0c0-4.6-5.5-11.3-5.5-11.3z"/></svg></div>
+          <h3>Irrigation &amp; sprinklers</h3>
+          <p>Systems installed, repaired and tuned so water reaches the plants instead of the pavement.</p>
+        </div>
+        <div class="svc">
+          <div class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="11" rx="1.5"/><path d="M3 13h18M9 8v11M15 8v11"/></svg></div>
+          <h3>Sod &amp; turf</h3>
+          <p>New lawns laid on properly graded and prepared ground — the part underneath that makes them last.</p>
+        </div>
+        <div class="svc">
+          <div class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M4 20l3-7h10l3 7"/><path d="M9 13V8h6v5"/><path d="M8 16.5h8"/></svg></div>
+          <h3>Hardscape &amp; pavers</h3>
+          <p>Patios, walkways, borders and retaining walls, set on a compacted base that will not sink.</p>
+        </div>
+        <div class="svc">
+          <div class="ico" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M6 7l1 13h10l1-13"/><path d="M9 7V4h6v3"/></svg></div>
+          <h3>Cleanups &amp; clearing</h3>
+          <p>Seasonal cleanups, overgrown lots cleared, and green waste hauled away rather than left in a pile.</p>
+        </div>
+      </div>
+
+      <div class="split-band">
+        <div>
+          <h3>Residential and commercial</h3>
+          <p>Family homes, rentals, HOAs and commercial properties — the same crew and the same standard on each.</p>
+        </div>
+        <div><a class="btn btn-solid" href="#estimate">Get a free estimate</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. PROCESS ============ -->
+  <section id="process" class="process">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2>Free estimate, then a price you agree to.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="n">01</div>
+          <h3>Tell us about the yard</h3>
+          <p>Use the form, or call or text. A photo of the space helps more than anything.</p>
+        </div>
+        <div class="step">
+          <div class="n">02</div>
+          <h3>Free estimate</h3>
+          <p>We come and look at the property, talk through the options, and give you a price. It costs nothing.</p>
+        </div>
+        <div class="step">
+          <div class="n">03</div>
+          <h3>Done and cleaned up</h3>
+          <p>The work gets done, the green waste goes with us, and the yard is left ready to use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. LICENSED ============ -->
+  <section id="licensed">
+    <div class="wrap">
+      <p class="eyebrow">Licensed, bonded &amp; insured</p>
+      <h2>A licensed crew on your property.</h2>
+      <div class="ins-wrap">
+        <div class="ins-card">
+          <div class="num">1107968</div>
+          <div class="lbl">CSLB licence number</div>
+          <div class="sub">C-27 &mdash; Landscaping<br>Active &middot; $25,000 bond<br>Licensed since 2023</div>
+          <a href="https://www.cslb.ca.gov/onlineservices/checklicenseII/checklicense.aspx" rel="noopener">Verify at cslb.ca.gov &rarr;</a>
+        </div>
+        <div>
+          <p>California requires a contractor's licence for any landscaping job over $500 in labour and materials. Plenty of yard crews do not hold one — and if an uninsured worker is hurt on your property, that can become your problem.</p>
+          <ul class="checks">
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Active C-27 licence</strong> — held since 2023, the classification specific to landscaping.</span></li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Workers' compensation insurance</strong> carried for our crew — many yard services carry none.</span></li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>$25,000 contractor's bond</strong> with Merchants Bonding Company, on file with the state.</span></li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Free estimates</strong> — you know the price before we start.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. WORK ============ -->
+  <section id="work" class="work">
+    <div class="wrap">
+      <p class="eyebrow">The work</p>
+      <h2>Yards worth coming home to.</h2>
+      <div class="work-grid">
+        <figure class="shot">
+          <img src="img/frontyard.jpg" alt="Front lawn and planting at a home" loading="lazy">
+          <figcaption>Front yards</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/lawn.jpg" alt="Healthy green lawn" loading="lazy">
+          <figcaption>Lawns &amp; sod</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/hedges.jpg" alt="Trimmed hedges along a garden path" loading="lazy">
+          <figcaption>Hedges &amp; borders</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/path.jpg" alt="Shaded garden planting" loading="lazy">
+          <figcaption>Beds &amp; planting</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/stonework.jpg" alt="Driveway and front landscaping" loading="lazy">
+          <figcaption>Driveways &amp; hardscape</figcaption>
+        </figure>
+      </div>
+      <p class="fine">These photographs illustrate the type of work offered. Photos of our own jobs will replace them &mdash; before and after shots especially.</p>
+    </div>
+  </section>
+
+  <!-- ============ 7. AREAS ============ -->
+  <section id="areas">
+    <div class="wrap">
+      <p class="eyebrow">Where we work</p>
+      <h2>East Contra Costa County.</h2>
+      <p class="section-intro">Based in Pittsburg, covering the surrounding East Bay communities.</p>
+      <div class="area-grid">
+        <div class="area">Pittsburg</div>
+        <div class="area">Antioch</div>
+        <div class="area">Bay Point</div>
+        <div class="area">Concord</div>
+        <div class="area">Brentwood</div>
+        <div class="area">Oakley</div>
+        <div class="area">Clayton</div>
+        <div class="area">Martinez</div>
+      </div>
+      <p class="fine">Somewhere else nearby? Call or text and ask.</p>
+    </div>
+  </section>
+
+  <!-- ============ 8. ESTIMATE ============ -->
+  <section id="estimate" class="estimate">
+    <div class="wrap">
+      <p class="eyebrow">Free estimate</p>
+      <h2>Tell us about your yard.</h2>
+      <p class="section-intro">The more you can tell us up front, the more accurate the estimate — and a photo of the space helps more than anything.</p>
+      <div class="est-grid">
+        <div>
+          <div class="est-why">
+            <div class="row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Free, no-obligation estimate on every job.</span></div>
+            <div class="row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>One-off jobs or a regular maintenance schedule.</span></div>
+            <div class="row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Licensed, bonded and insured — CSLB #1107968.</span></div>
+            <div class="row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Prefer to talk? Call or text <a href="tel:+19257872220">(925) 787-2220</a>.</span></div>
+          </div>
+        </div>
+        <form class="eform" id="estform" novalidate>
+          <div class="frow">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="frow">
+            <div class="field">
+              <label for="f-city">City or neighbourhood</label>
+              <input id="f-city" name="city" type="text" autocomplete="address-level2">
+            </div>
+            <div class="field">
+              <label for="f-type">What do you need?</label>
+              <select id="f-type" name="jobtype">
+                <option value="">Please choose…</option>
+                <option>Regular yard maintenance</option>
+                <option>New landscape installation</option>
+                <option>Irrigation / sprinklers</option>
+                <option>Sod or new lawn</option>
+                <option>Pavers / hardscape</option>
+                <option>Cleanup or lot clearing</option>
+                <option>Commercial property</option>
+                <option>Not sure — need advice</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Tell us about the property</label>
+            <textarea id="f-msg" name="message" placeholder="Rough size, what is there now, what you would like…"></textarea>
+          </div>
+          <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+            <label for="f-website">Leave this empty</label>
+            <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="btn btn-solid" type="submit" id="estbtn">Request my free estimate</button>
+          <p class="note">You can also text photos of the yard to (925) 787-2220.</p>
+          <p class="sent" id="eststatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. CONTACT ============ -->
+  <section id="contact" class="contact-band">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Let's talk about your property.</h2>
+      <p class="section-intro">Call, text or email — whichever is easiest.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="tel:+19257872220">Call (925) 787-2220</a>
+        <a class="btn btn-ghost" href="mailto:mjlandscape781@gmail.com">Email us</a>
+      </div>
+      <p class="fine">Pittsburg, CA &middot; East Contra Costa County &middot; CSLB #1107968</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p class="fname">MJL Landscaping</p>
+    <p>Licensed C-27 landscaping contractor &middot; Pittsburg, California</p>
+    <p><a href="tel:+19257872220">(925) 787-2220</a> &middot; <a href="mailto:mjlandscape781@gmail.com">mjlandscape781@gmail.com</a></p>
+    <p>California CSLB licence #1107968 &middot; bonded &amp; insured &middot; East Contra Costa County</p>
+    <p class="fineprint">Licence number, classification, bond and workers' compensation status are public record with the California Contractors State License Board and can be verified at cslb.ca.gov. Photographs on this page illustrate the type of work offered rather than specific completed jobs.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var form = document.getElementById('estform');
+  if (!form) { return; }
+  var btn = document.getElementById('estbtn');
+  var out = document.getElementById('eststatus');
+  var EMAIL = 'mjlandscape781@gmail.com';
+  var NL = String.fromCharCode(10);
+
+  function say(msg, ok) {
+    out.textContent = msg;
+    out.className = 'sent ' + (ok ? 'ok' : 'err');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (form.website.value) { say('Thanks — we will be in touch.', true); return; }
+
+    var name = form.name.value.trim();
+    var phone = form.phone.value.trim();
+    if (!name || !phone) { say('Please add your name and a phone number.', false); return; }
+
+    var lines = [];
+    lines.push('Name: ' + name);
+    lines.push('Phone: ' + phone);
+    if (form.city.value.trim()) { lines.push('City: ' + form.city.value.trim()); }
+    if (form.jobtype.value) { lines.push('Job: ' + form.jobtype.value); }
+    if (form.message.value.trim()) { lines.push('Details: ' + form.message.value.trim()); }
+
+    var subject = 'Estimate request — ' + name;
+    var body = 'Estimate request from the MJL Landscaping website' + NL + NL + lines.join(NL);
+
+    btn.textContent = 'Opening your email…';
+    say('Opening an email to MJL Landscaping — attach a photo of the yard before you send.', true);
+    window.location.href = 'mailto:' + EMAIL +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
+
+<script src="https://smb.airoxlab.com/api/t/script" defer></script>
+</body>
+</html>
